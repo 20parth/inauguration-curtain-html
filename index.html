@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TNP - Inauguration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Developed by Parth Bhawar | git : 20parth -->
+</head>
+<body>
+  <div class="rxWorld">
+    <section class="rnOuter">
+      <section class="aoTable">
+        <div class="aoTableCell">
+          <img src="Inauguration.jpg" alt="Inauguration Event" style="width: 70%; height: auto;">
+        </div>
+      </section>
+
+      <!-- Left curtain section -->
+      <div class="rnInnerLeft">
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+
+
+      </div>
+
+      <!-- Right curtain section -->
+      <div class="rnInnerRight">
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+        <div class="rnUnit"></div>
+       
+
+      </div>
+
+    </section>
+  </div>
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+   // On click or "Enter" key press using jQuery
+   $(document).on('click', function() {
+    openCurtain();
+  });
+
+  $(document).on('keydown', function(event) {
+    // Check if the "Enter" key is pressed (key code 13)
+    if (event.key === 'Enter' || event.keyCode === 13 || event.keyCode === 37 || event.keyCode === 39 || event.keyCode === 32) {
+      openCurtain();
+    }
+  });
+
+  // Function to open the curtain using jQuery
+  function openCurtain() {
+    $('.rnInnerLeft').css('transform', 'translateX(-100%)');
+    $('.rnInnerRight').css('transform', 'translateX(100%)');
+    $('.aoTableCell').css('color', 'white');
+  }
+  </script>
+</body>
+</html>
+
+<!-- Developed by Parth Bhawar | git : 20parth -->
