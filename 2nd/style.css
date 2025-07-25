@@ -1,0 +1,82 @@
+/* Developed by Parth Bhawar | git : 20parth */
+.rnOuter {
+  background: hsl(0, 80%, 38%);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.rnInnerLeft,
+.rnInnerRight {
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  width: 50%; 
+  transform-style: preserve-3d;
+  transition: transform 7s ease; 
+}
+
+.rnInnerLeft {
+  left: 0;
+  transform-origin: left center;
+}
+
+.rnInnerRight {
+  right: 0;
+  transform-origin: right center;
+}
+
+.rnUnit {
+  width: 6vw;
+  height: 140vh;
+  margin-left: -35px;
+  background: repeating-linear-gradient(to left, hsl(0, 80%, 50%) 4vw, hsl(0, 80%, 30%) 8vw, hsl(0, 80%, 70%) 10vw);
+  background-size: 100% 100%;
+  display: inline-block;
+  transform-origin: 0 0%;
+  transform: rotate(3deg);
+  animation: rnUnit 7s ease infinite;
+}
+
+@keyframes rnUnit {
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+
+.rnUnit:nth-child(1) { animation-delay: -0.1s; }
+.rnUnit:nth-child(2) { animation-delay: -0.2s; }
+.rnUnit:nth-child(3) { animation-delay: -0.3s; }
+.rnUnit:nth-child(4) { animation-delay: -0.4s; }
+.rnUnit:nth-child(5) { animation-delay: -0.5s; }
+.rnUnit:nth-child(6) { animation-delay: -0.6s; }
+.rnUnit:nth-child(7) { animation-delay: -0.7s; }
+.rnUnit:nth-child(8) { animation-delay: -0.8s; }
+.rnUnit:nth-child(9) { animation-delay: -0.9s; }
+.rnUnit:nth-child(10) { animation-delay: -0.9s; }
+.rnUnit:nth-child(11) { animation-delay: -0.9s; }
+.rnUnit:nth-child(12) { animation-delay: -0.9s; }
+.rnUnit:nth-child(13) { animation-delay: -0.9s; }
+.rnUnit:nth-child(14) { animation-delay: -0.9s; }
+.rnUnit:nth-child(15) { animation-delay: -0.9s; }
+.rnUnit:nth-child(16) { animation-delay: -0.9s; }
+.rnUnit:nth-child(17) { animation-delay: -0.9s; }
+.rnUnit:nth-child(18) { animation-delay: -0.9s; }
+.rnUnit:nth-child(19) { animation-delay: -0.9s; }
+.rnUnit:nth-child(20) { animation-delay: -0.9s; }
+
+
+
+.aoTable {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.aoTableCell {
+  color: hsl(0, 80%, 38%);
+  display: table-cell;
+  vertical-align: middle;
+  transition: color 3s ease;
+}
